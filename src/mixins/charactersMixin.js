@@ -4,7 +4,7 @@ import { scrollMixin } from '@/mixins/scrollMixin';
 export const charactersMixin = {
   data() {
     return {
-      loadMore: false,
+      loadMore: true,
     };
   },
   mixins: [scrollMixin('loadMoreCharacters')],

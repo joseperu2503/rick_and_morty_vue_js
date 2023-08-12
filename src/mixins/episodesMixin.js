@@ -4,7 +4,7 @@ import { scrollMixin } from '@/mixins/scrollMixin';
 export const episodesMixin = {
   data() {
     return {
-      loadMore: false,
+      loadMore: true,
     };
   },
   mixins: [scrollMixin('loadMoreEpisodes')],

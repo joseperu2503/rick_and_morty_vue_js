@@ -23,7 +23,7 @@ export default {
       this.$emit("input", event.target?.value);
     },
     onEnter() {
-      this.$refs.input.value?.blur()
+      this.$refs.input?.blur()
     }
   }
 }

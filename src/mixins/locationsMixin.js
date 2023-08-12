@@ -4,7 +4,7 @@ import { scrollMixin } from '@/mixins/scrollMixin';
 export const locationsMixin = {
   data() {
     return {
-      loadMore: false,
+      loadMore: true,
     };
   },
   mixins: [scrollMixin('loadMoreLocations')],
