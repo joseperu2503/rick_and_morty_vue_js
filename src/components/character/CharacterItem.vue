@@ -30,7 +30,7 @@ export default {
     goCharacter() {
       this.$router.push({
         name: "character",
-        params: { characterId: character.value.id },
+        params: { characterId: this.character.id },
       });
     },
     onImageLoad() {

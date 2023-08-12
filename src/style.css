@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.neon {
+  transition: 0.2s;
+}
+
+.neon:hover {
+  transform: scale(105%);
+}
+
+.neon.active {
+  text-shadow: 0 0 5px #5cad4a, 0 0 8px #5cad4a, 0 0 13px #5cad4a;
+}
+
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

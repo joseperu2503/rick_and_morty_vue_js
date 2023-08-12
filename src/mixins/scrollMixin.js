@@ -9,10 +9,14 @@ export function scrollMixin(callback) {
       if (this.body) {
         this.body.scrollTop = 0;
       }
-      this.body?.addEventListener('scroll', this.scrollEvent);
+      if (callback) {
+        this.body?.addEventListener('scroll', this.scrollEvent);
+      }
     },
     beforeUnmount() {
-      this.body?.addEventListener('scroll', this.scrollEvent);
+      if (callback) {
+        this.body?.removeEventListener('scroll', this.scrollEvent);
+      }
     },
     methods: {
       scrollEvent() {

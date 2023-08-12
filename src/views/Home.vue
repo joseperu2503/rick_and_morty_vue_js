@@ -12,7 +12,7 @@
 
         </div>
         <div class="h-8">
-          <img src="@/assets/portal-rick-and-morty.gif" alt="" class="transition-all duration-500"
+          <img src="@/assets/portal-rick-and-morty.gif" alt="" class="transition-all duration-300"
             :class="[showPortal ? 'h-8 w-40' : 'h-0 w-0']">
         </div>
       </div>
@@ -36,7 +36,7 @@ export default {
     this.getSomeCharacters("1,2,3,4,5")
     setTimeout(() => {
       this.showPortal = true
-    }, 500);
+    }, 300);
   }, methods: {
     enter() {
       this.$router.push({ name: "characters" });

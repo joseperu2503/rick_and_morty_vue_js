@@ -39,7 +39,6 @@ export default {
   },
   beforeUnmount() {
     this.body?.removeEventListener("scroll", this.scroll);
-
   },
   methods: {
     ...mapMutations('appbar', [
